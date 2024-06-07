@@ -518,10 +518,11 @@ class PokemonCon(App):
         pass
 
     def build(self) -> ScreenManager:
-        initialize_google(self.after_login, self.login_error_listener, "104284788592-"
-                                                                       "ed1bgndd9e0bnqikgcvrjp6l5s4h1ctc"
-                                                                       ".apps.googleusercontent.com",
-                          "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")
+        # These client IDs and client secrets are now invalid
+        # initialize_google(self.after_login, self.login_error_listener, "104284788592-"
+        #                                                                "ed1bgndd9e0bnqikgcvrjp6l5s4h1ctc"
+        #                                                                ".apps.googleusercontent.com",
+        #                   "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")
         # initialize_google(self.after_login, self.login_error_listener, "104284788592-"
         #                                                                "b2tdan570nhjvf9s1jdmkodro1ian3n4"
         #                                                                ".apps.googleusercontent.com")

@@ -673,7 +673,7 @@
             Slider:
                 id: music_slider
                 range: 0, 1
-                value: 0
+                value: 1
                 step: 0.01
                 width: options_btn.width
                 center: music_label.center_x, volume_label.center_y - (options_btn.height * 2) - music_label.height if options_btn.opacity == 1 else root.top + options_content.height
@@ -790,7 +790,7 @@
                 label_font_size_divisor: 2
                 label_center_x_subtractor: 3
                 disabled: True if login_btn.label_text == "Login" else False
-                opacity: 0.6 if self.disabled else 1
+                opacity: 0 if self.disabled else 1
                 on_release: root.confirm_logout()
 
                 canvas.before:
